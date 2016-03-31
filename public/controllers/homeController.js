@@ -29,7 +29,7 @@ $rootScope.authinfo = {};
     
 	
     function loadData(){
-    	 $http.get('http://localhost:3000/product/query/getNewProducts')
+    	 $http.get('/product/query/getNewProducts')
         .success(function(data, status) {
             
                 $scope.newProducts = data;

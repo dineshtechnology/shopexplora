@@ -5,7 +5,7 @@ app.controller('itemCtrl', function ($scope,$rootScope,$http,$routeParams,mvNoti
 loadData();
 	
     function loadData(){
-    	 $http.get('http://localhost:3000/product/' + $routeParams.category)
+    	 $http.get('/product/' + $routeParams.category)
         .success(function(data, status) {
             console.log('received');
             console.log(data);
