@@ -56,8 +56,8 @@ app.use(function(err, req, res, next) {
   });
 });
 
-
-app.listen(80,function(req,res)
+var port = process.env.PORT || 1337;
+app.listen(port,function(req,res)
 {
 console.log('server started');
 });
