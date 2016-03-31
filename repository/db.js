@@ -43,7 +43,7 @@ var productModel = mongoose.model('product', productSchema);
 		addProduct: function(req,res,next) 
 		{
 
-			console.log(req.body);
+			//console.log(req.body);
 
 
 			var productReq = req.body;
@@ -62,7 +62,7 @@ var productModel = mongoose.model('product', productSchema);
 			product.isnew = productReq.isnew;
 			product.islandingproduct = productReq.islandingproduct;
 			product.category = req.params.category;
-			console.log(product);
+		//	console.log(product);
 
 			product.save(function (err) {
 
@@ -85,7 +85,7 @@ var productModel = mongoose.model('product', productSchema);
 		{
 			console.log('call received for db');
 			productModel.find({'category':req.params.category}, function (err, docs) {
-			console.log(docs);
+		//	console.log(docs);
   			next(docs);
 
 			});
@@ -181,8 +181,8 @@ var productModel = mongoose.model('product', productSchema);
 				],
 			// optional callback 
 			function(err, results){
-			    console.log(results);
-			    console.log(newProducts);
+			    //console.log(results);
+			    //console.log(newProducts);
 			    next(newProducts);
 			});
 			

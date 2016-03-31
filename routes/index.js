@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
 router.post('/product/:category',function(req,res,next)
 {
 
-console.log(req.body);
+//console.log(req.body);
 
 console.log('call received for add product');
 
@@ -32,7 +32,7 @@ console.log('call ended for add product');
 router.get('/product/:category',function(req,res,next)
 {
 
-console.log(req.body);
+//console.log(req.body);
 
 console.log('call received for get product for category');
 
@@ -61,7 +61,7 @@ console.log('call received for get home page products');
 
 db.getNewProducts(req,res,function(response)
 {
-console.log(response);
+//console.log(response);
 	res.json(response);
 
 
@@ -142,7 +142,7 @@ var products = {
 });
 
 router.get('/partials/*', function(req, res) {
-        console.log(req.url);
+        //console.log(req.url);
     res.sendFile('/app/' + req.params[0],{root: './public'});
     });
 
