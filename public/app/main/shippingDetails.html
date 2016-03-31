@@ -1,0 +1,154 @@
+      <!-- Page title -->
+      <div class="page-title">
+         <div class="container">
+            <h2><i class="fa fa-ship color"></i>Shipping Address<small></small></h2>
+            <hr />
+         </div>
+      </div>
+      <!-- Page title -->
+      
+      <!-- Page content -->
+      
+      <div class="account-content">
+         <div class="container">
+            
+            <div class="row">
+               <div class="col-md-3">
+                  <div class="sidey">
+                     <ul class="nav">
+                         <li><a href="account.html">My Account</a></li>
+                         <li><a href="wishlist.html">Wish List</a></li>
+                         <li><a href="orderhistory.html">Order History</a></li>                         
+                         <li><a href="editprofile.html">Edit Profile</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-9">
+                  <h3><i class="fa fa-ship color"></i> &nbsp;Shipping Info</h3>
+                  <!-- Your details -->
+                   <div class="address">
+                        
+  <div>                        
+  <form class="form-horizontal" novalidate>
+    <fieldset>
+      <legend>Delivery Address</legend>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="house-no">House No / Building Name</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" ng-model="shipping.houseno" name="house-no" id="house-no" placeholder="Building Name / Apartment Name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="street-address">Street Name</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" ng-model="shipping.streename" name="street-address" id="street-address" placeholder="Street Address / Locatlity Name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="city-name">City</label>
+        <div class="col-sm-9">
+          <input type="text" ng-model="shipping.city" class="form-control" name="city-name" id="city-name" placeholder="City Name ...ex. Salem/Bangalore">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="state-name">State</label>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-xs-3">
+              <select class="form-control ng-model="shipping.state" col-sm-2" name="state-name" id="state-name">
+                <option>select</option>
+                <option value="TN">Tamilnadu (TN)</option>
+                <option value="KA">Karnataka (KA)</option>
+                <option value="KL">Kerala (KL)</option>
+                <option value="MH">Maharastra (MH)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label"  for="country-name">Country</label>
+        <div class="col-sm-3">
+          <input type="text" class="form-control" ng-model="shipping.country" name="country-name" id="cvv" placeholder="Country">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+          <button type='button' ng-click="saveShippingData()"  class="btn btn-success">Save</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+ 
+
+                   </div>
+
+                   <hr />
+                    <div style="text-align:right">
+                   <a href="/#items/men" class="btn btn-default" >Continue Shopping</a> 
+                   <!--  <button type="button" class="btn btn-default">Continue Shopping</button>
+  -->
+                     <a href="/#checkout/creditcard" class="btn btn-info" >Checkout</a> 
+                   
+               </div>
+            </div>
+            
+            <div class="sep-bor"></div>
+         </div>
+      </div>
+     
+     <div class="shop-items blocky" ng-controller="homeController">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <!-- Section title -->
+                  <div class="section-title">
+                     <h4><i class="fa fa-desktop color"></i> &nbsp;Whats New</h4>
+                  </div>
+                    <div class="row" >
+
+                        <!-- Item #1 -->
+                        <div ng-repeat="product in newProducts.homenew">
+                        <div class="col-md-3 col-sm-4 col-xs-12">
+                          <div class="item">
+                            <!-- Use the below link to put HOT icon -->
+                            <div class="item-icon" ></div>
+                            <!-- Item image -->
+                            <div class="item-image">
+                              <a href="single-item.html"><img src={{product.imgurl}} alt="" class="img-responsive"/></a>
+                            </div>
+                            <!-- Item details -->
+                            <div class="item-details">
+                              <!-- Name -->
+                              <h5><a href="single-item.html">{{product.name}}</a></h5>
+                              <div class="clearfix"></div>
+                              <!-- Para. Note more than 2 lines. -->
+                              <p>{{product.short_description}}</p>
+                              <hr />
+                              <!-- Price -->
+                              <div class="item-price pull-left">Rs. {{product.price}}</div>
+                              <!-- Add to cart -->
+                              <div class="pull-right"><a href ng-click="saveBasket(product._id,product.name,product.price,1)" class="btn btn-danger btn-sm">Add to Cart</a></div>
+                              <div class="clearfix"></div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+
+                        </div>
+
+                  
+
+        </div>
+          
+               </div>
+            </div>
+         </div>   
+      
+
+
+
+
+
+
+

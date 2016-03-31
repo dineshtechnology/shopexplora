@@ -1,0 +1,210 @@
+
+
+
+
+      <!-- Page title -->
+      <div class="page-title">
+         <div class="container">
+            <h2><i class="fa fa-desktop color"></i>Shopping Cart<small>My Cart</small></h2>
+            <hr />
+         </div>
+      </div>
+      <!-- Page title -->
+      
+      <!-- Page content -->
+      
+      <div class="account-content">
+         <div class="container">
+            
+            <div class="row">
+               <div class="col-md-3">
+                  <div class="sidey">
+                     <ul class="nav">
+                         <li><a href="account.html">My Account</a></li>
+                         <li><a href="wishlist.html">Wish List</a></li>
+                         <li><a href="orderhistory.html">Order History</a></li>                         
+                         <li><a href="editprofile.html">Edit Profile</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-9">
+                  <h3><i class="fa fa-user color"></i> &nbsp;Shopping Cart</h3>
+                  <!-- Your details -->
+                   <div class="address">
+                          <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total Price</th>
+                </tr>
+              </thead>
+              <tbody ng-repeat="gbasketItem in gbasket">
+                <tr>
+                  <td><a>{{gbasketItem.name}}</a></td>
+                  <td>Rs. {{gbasketItem.price}} </td>
+                  <td>{{gbasketItem.quantity}}</td>
+                  <td>Rs. {{gbasketItem.finalprice}} </td>
+                </tr>
+              </tbody>
+               <tfoot>
+                  <tr>
+                    <td></td>
+                    <td>Total</td>
+                    <td><b>{{gbasket.totalitem}}</b></td>
+                     <td><b>{{gbasket.totalprice}}</b></td>
+                  </tr>
+                </tfoot>
+     </table>
+                   </div>
+
+                   <hr />
+                   <div style="text-align:right">
+                   <a href="/#items/men" class="btn btn-default" >Continue Shopping</a> 
+                   <!--  <button type="button" class="btn btn-default">Continue Shopping</button>
+  -->
+                     <a href="/#checkout/shipping" class="btn btn-info" >Checkout</a> 
+                   
+               </div>
+            </div>
+            
+            <div class="sep-bor"></div>
+         </div>
+      </div>
+     
+      
+      <!-- Recent posts Starts -->
+  
+      <div class="recent-posts blocky">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <!-- Section title -->
+                  <div class="section-title">
+                     <h4><i class="fa fa-desktop color"></i> &nbsp;Whats New</h4>
+                  </div>    
+                  
+          <div id="item-carousel" class="carousel slide" data-ride="carousel">
+              
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <!-- single item -->
+                  <div class="s-item">
+                    <!-- Image link -->
+                    <a href="single-item.html">
+                      <img src="img/items/2.png" class="img-responsive" alt="" />
+                    </a>
+                    <!-- portfolio caption -->
+                    <div class="s-caption">
+                      <!-- heading and paragraph -->
+                      <h4><a href="#">Finibus Bonorum</a></h4>
+                      <p>Clintock, a Lat Hampden-Sydney College in Virginia.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="s-item">
+                    <a href="single-item.html">
+                      <img src="img/items/3.png" class="img-responsive" alt="" />
+                    </a>
+                    <div class="s-caption">
+                      <h4><a href="#">Finibus Bonorum</a></h4>
+                      <p>Clintock, a Lat Hampden-Sydney College in Virginia.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="s-item">
+                    <a href="single-item.html">
+                      <img src="img/items/4.png" class="img-responsive" alt="" />
+                    </a>
+                    <div class="s-caption">
+                      <h4><a href="#">Finibus Bonorum</a></h4>
+                      <p>Clintock, a Lat Hampden-Sydney College in Virginia.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="s-item">
+                    <a href="single-item.html">
+                      <img src="img/items/5.png" class="img-responsive" alt="" />
+                    </a>
+                    <div class="s-caption">
+                      <h4><a href="#">Finibus Bonorum</a></h4>
+                      <p>Clintock, a Lat Hampden-Sydney College in Virginia.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <div class="s-item">
+                    <a href="single-item.html">
+                      <img src="img/items/6.png" class="img-responsive" alt="" />
+                    </a>
+                    <div class="s-caption">
+                      <h4><a href="#">Finibus Bonorum</a></h4>
+                      <p>Clintock, a Lat Hampden-Sydney College in Virginia.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="s-item">
+                    <a href="single-item.html">
+                      <img src="img/items/7.png" class="img-responsive" alt="" />
+                    </a>
+                    <div class="s-caption">
+                      <h4><a href="#">Finibus Bonorum</a></h4>
+                      <p>Clintock, a Lat Hampden-Sydney College in Virginia.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="s-item">
+                    <a href="single-item.html">
+                      <img src="img/items/8.png" class="img-responsive" alt="" />
+                    </a>
+                    <div class="s-caption">
+                      <h4><a href="#">Finibus Bonorum</a></h4>
+                      <p>Clintock, a Lat Hampden-Sydney College in Virginia.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="s-item">
+                    <a href="single-item.html">
+                      <img src="img/items/9.png" class="img-responsive" alt="" />
+                    </a>
+                    <div class="s-caption">
+                      <h4><a href="#">Finibus Bonorum</a></h4>
+                      <p>Clintock, a Lat Hampden-Sydney College in Virginia.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+            <!-- Controls -->
+          <a class="left c-control" href="#item-carousel" data-slide="prev">
+            <i class="fa fa-chevron-left"></i>
+          </a>
+          <a class="right c-control" href="#item-carousel" data-slide="next">
+            <i class="fa fa-chevron-right"></i>
+          </a>
+
+        </div>
+          
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <!-- Recent posts Ends -->  
+      

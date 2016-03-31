@@ -1,0 +1,23 @@
+
+POST
+
+http://localhost:3000/product/mobiles
+
+{	
+"name":"iphone 6",
+"price":"Rs.1002",
+"imgurl":"img/items/2.png",
+"short_description":"Something about the product goes here. Not More than 2 lines.",
+"long_description":"Something about the product goes here. Not More than 2 lines.",
+"shipping":"free",
+"brand":"apple",
+"colors":["blue","orange","black"],
+"stock":"100",
+"reviews":["test","test2"]
+}
+
+
+
+GET
+
+http://localhost:3000/product/mobiles

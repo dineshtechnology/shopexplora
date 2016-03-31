@@ -1,0 +1,175 @@
+
+      <!-- Page title -->
+
+      <div class="page-title">
+         <div class="container">
+            <h2 ng-model="title"><i class="{{font}} color"></i> {{title}} <small>{{subheading}}</small></h2>
+            <hr />
+         </div>
+      </div>
+      <!-- Page title -->
+      
+      <!-- Page content -->
+      
+      <div class="shop-items">
+         <div class="container">
+            
+            <div class="row">
+               
+               <div class="col-md-9 col-md-push-3">
+               
+                   <!-- Breadcrumb -->
+                 <ul class="breadcrumb">
+                   <li><a href="/#/">Home</a> <span class="divider"></span></li>
+                   <li><a href="/#items/{{title}}">{{title}}</a> <span class="divider"></span></li>
+                   
+                 </ul>
+               
+                 <!-- Items List starts -->
+
+                     <div class="row" >
+
+                        <!-- Item #1 -->
+                        <div ng-repeat="product in products">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                          <div class="item">
+                            <!-- Use the below link to put HOT icon -->
+                            <div class="item-icon"><span>HOT</span></div>
+                            <!-- Item image -->
+                            <div class="item-image">
+                              <a href onclick="window.open(product.imgurl);"><img src={{product.imgurl}} alt="" class="img-responsive"/></a>
+                            </div>
+                            <!-- Item details -->
+                            <div class="item-details">
+                              <!-- Name -->
+                              <h5><a href onclick="window.open(product.imgurl);">{{product.name}}</a></h5>
+                              <div class="clearfix"></div>
+                              <!-- Para. Note more than 2 lines. -->
+                              <p>{{product.short_description}}</p>
+                              <hr />
+                              <!-- Price -->
+                              <div class="item-price pull-left">Rs. {{product.price}}</div>
+                              <!-- Add to cart -->
+                              <div class="pull-right"><a href ng-click="saveBasket(product._id,product.name,product.price,1)" class="btn btn-danger btn-sm">Add to Cart</a></div>
+                              <div class="clearfix"></div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+
+                        </div>
+
+                       
+                      
+
+                  <!-- Items List ends -->
+    
+               
+               
+               </div>
+               
+               
+               <div class="col-md-3 col-md-pull-9">
+                  <div class="sidey">
+                     <ul class="nav">
+                         <li><a href="/#/"><i class="fa fa-home"></i> &nbsp;Home</a>
+                         <li><a href="#items/men"><i class="fa fa-child"></i> &nbsp;Fashion</a>
+                             <ul>
+                                 <li><a href="#items/men">Men</a></li>
+                                 <li><a href="#items/women">Women</a></li>
+                                 <li><a href="#items/boys">Boys</a></li>
+                                 <li><a href="#items/girls">Girls</a></li>
+                                 <li><a href="#items/kids">Kids</a></li>
+                             </ul>
+                         </li>
+                         <li><a href="#items/mobiles"><i class="fa fa-laptop"></i> &nbsp;Electronics</a>
+                             <ul>
+                                 <li><a href="#items/desktop">Desktop</a></li>
+                                 <li><a href="#items/laptops">Laptop</a></li>
+                                 <li><a href="#items/homeappliances">Home Applicances</a></li>
+                                 <li><a href="#items/mobiles">Mobiles</a></li>
+                             </ul>
+                         </li>
+                         <li><a href="#items/adventure"><i class="fa fa-gamepad"></i> &nbsp;Games</a>
+                             <ul>
+                                 <li><a href="#items/adventure">Adventure</a></li>
+                                 <li><a href="#items/horror">Horror</a></li>
+                                 <li><a href="#items/buzzle">Buzzle</a></li>
+                                 <li><a href="#items/racing">Racing</a></li>
+                             </ul>
+                         </li>
+                     </ul>
+                  </div>
+                  
+                  
+
+                  
+                   </div>
+               </div>
+            </div>
+            
+            <div class="sep-bor"></div>
+         </div>
+      </div>
+     
+      
+      <!-- Recent posts Starts -->
+	
+   
+     <div class="shop-items blocky" ng-controller="homeController">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <!-- Section title -->
+                  <div class="section-title">
+                     <h4><i class="fa fa-desktop color"></i> &nbsp;Whats New</h4>
+                  </div>
+                    <div class="row" >
+
+                        <!-- Item #1 -->
+                        <div ng-repeat="product in newProducts.homenew">
+                        <div class="col-md-3 col-sm-4 col-xs-12">
+                          <div class="item">
+                            <!-- Use the below link to put HOT icon -->
+                            <div class="item-icon" ></div>
+                            <!-- Item image -->
+                            <div class="item-image">
+                              <a href="single-item.html"><img src={{product.imgurl}} alt="" class="img-responsive"/></a>
+                            </div>
+                            <!-- Item details -->
+                            <div class="item-details">
+                              <!-- Name -->
+                              <h5><a href="single-item.html">{{product.name}}</a></h5>
+                              <div class="clearfix"></div>
+                              <!-- Para. Note more than 2 lines. -->
+                              <p>{{product.short_description}}</p>
+                              <hr />
+                              <!-- Price -->
+                              <div class="item-price pull-left">Rs. {{product.price}}</div>
+                              <!-- Add to cart -->
+                              <div class="pull-right"><a href ng-click="saveBasket(product._id,product.name,product.price,1)" class="btn btn-danger btn-sm">Add to Cart</a></div>
+                              <div class="clearfix"></div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+
+                        </div>
+
+                  
+
+        </div>
+          
+               </div>
+            </div>
+         </div>
+
+				</div>
+				  
+               </div>
+            </div>
+         </div>
+      </div>
+			
+      <!-- Recent posts Ends -->
+      
