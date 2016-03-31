@@ -1,4 +1,4 @@
-# ShopExplora Cloud Project
+# ShopExplora Cloud Project - Amazon Web Service
 
 ##Install NodeJs
 
